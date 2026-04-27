@@ -1,0 +1,26 @@
+{
+  "name": "safespace-ai-backend",
+  "version": "1.0.0",
+  "description": "Express backend for SafeSpace AI",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+   "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "mongodb-memory-server": "^10.1.4",
+    "multer": "^1.4.5-lts.2",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
