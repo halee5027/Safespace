@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #f3f7f6;
+  --bg-accent: #fff6e9;
+  --panel: rgba(255, 255, 255, 0.88);
+  --line: rgba(15, 23, 42, 0.11);
+}
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply m-0 font-body text-ink;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(34, 211, 166, 0.28), transparent 40%),
+    radial-gradient(circle at 85% 8%, rgba(245, 158, 11, 0.2), transparent 35%),
+    linear-gradient(135deg, var(--bg-main), var(--bg-accent));
+  min-height: 100vh;
+}
+
+.card-surface {
+  @apply rounded-2xl border border-white/70 bg-white/80 backdrop-blur-lg shadow-panel;
+}
+
+.grid-noise {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
